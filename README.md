@@ -1,28 +1,17 @@
-# ProteinLocAI
+# Bioinformatics AI Projects
+
+생명과학 지식과 머신러닝·AI 서비스 개발을 결합한 프로젝트 모음입니다.
+
+## Projects
+
+### 1. DNA Promoter Sequence Classification
+
+염기서열 Feature와 머신러닝을 활용한 promoter/non-promoter 분류 프로젝트
+
+[프로젝트 상세 보기](./molecular%2Bbiology%2Bpromoter%2Bgene%2Bsequences/README.md)
+
+### 2. ProteinLocAI
 
 아미노산 서열 기반 단백질 세포 내 위치 예측 AI 서비스
 
-## Project Overview
-
-단백질 아미노산 서열을 입력하면 다음 세포 내 위치 중 하나를 예측합니다.
-
-- cytoplasm
-- mitochondrion
-- nucleus
-
-FastAPI 기반 예측 API와 Streamlit 웹 화면을 Docker Compose로 구성했습니다.
-
-## System Architecture
-
-```text
-사용자
-  ↓
-Streamlit 웹 화면
-  ↓ HTTP POST
-FastAPI 예측 API
-  ↓
-Feature Engineering
-  ↓
-SVM 모델
-  ↓
-예측 위치 및 예측 확률 반환
+[프로젝트 상세 보기](./protein_loc_ai/README.md)
