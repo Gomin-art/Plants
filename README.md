@@ -8,7 +8,7 @@
 
 염기서열 Feature와 머신러닝을 활용한 promoter/non-promoter 분류 프로젝트
 
-[프로젝트 상세 보기](./molecular%2Bbiology%2Bpromoter%2Bgene%2Bsequences/README.md)
+[프로젝트 상세 보기](https://github.com/Gomin-art/bioinformatics-ai-projects/blob/main/molecular%2Bbiology%2Bpromoter%2Bgene%2Bsequences/README.md)
 
 ### 2. ProteinLocAI
 
