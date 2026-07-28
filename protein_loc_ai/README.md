@@ -1,26 +1,43 @@
-# Bioinformatics AI Projects
+# ProteinLocAI
 
-생명과학 지식과 머신러닝·AI 서비스 개발을 결합한 프로젝트 모음입니다.
+아미노산 서열 기반 단백질 세포 내 위치 예측 AI 서비스
 
-## Projects
+## 프로젝트 소개
 
-### ProteinLocAI
+단백질 아미노산 서열을 입력하면 다음 세포 내 위치를 예측합니다.
 
-아미노산 서열 기반 단백질 세포 내 위치 예측 AI 서비스입니다.
+- cytoplasm
+- mitochondrion
+- nucleus
 
-- SVM 기반 3-class 분류
-- N-terminal Feature Engineering
-- FastAPI 예측 API
-- Streamlit 웹 화면
-- Docker Compose 배포
+## 주요 기술
 
-[ProteinLocAI 폴더 보기](./protein_loc_ai)
+- Python
+- scikit-learn
+- SVM
+- FastAPI
+- Streamlit
+- Docker Compose
 
-### DNA Promoter Sequence Classification
+## Feature Engineering
 
-DNA 염기서열을 활용한 promoter/non-promoter 분류 프로젝트입니다.
+총 452개 Feature를 사용했습니다.
 
-- One-hot Encoding
-- k-mer Feature
-- 머신러닝 모델 비교
-- Feature Importance 분석
+- 아미노산 조성: 20개
+- 생화학적 특성: 5개
+- 서열 길이: 1개
+- 2-mer 빈도: 400개
+- N-terminal Feature: 26개
+
+## 성능
+
+- Holdout Accuracy: 약 0.736
+- Holdout Balanced Accuracy: 약 0.737
+- Holdout Macro F1-score: 약 0.73
+- 5-Fold Mean Macro F1-score: 약 0.712
+- 5-Fold Mean Balanced Accuracy: 약 0.719
+
+## 실행 방법
+
+```powershell
+docker compose up --build
